@@ -270,9 +270,9 @@ xkb_symbols "dvorak" {
 //      â   ö   è   ù   ï
 
 partial alphanumeric_keys
-xkb_symbols "dvorak-intl" {
+xkb_symbols "dvorak-alt-intl" {
 
-    name[Group1]= "USA - Dvorak international";
+    name[Group1]= "USA - Dvorak alternative international (no dead keys; former dvorak-intl)";
 
     include "us(dvorak)"
 
