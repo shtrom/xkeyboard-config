@@ -70,6 +70,27 @@ xkb_symbols "extended" {
     key <KPEQ> {	[  equal				]	};
 };
 
+partial alphanumeric_keys
+xkb_symbols "dvorak" {
+    name[Group1]= "USA - Dvorak";
+    include "macintosh_vndr/us(extended)"
+    include "us(dvorak)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "dvorak-intl" {
+    name[Group1]= "USA - Dvorak international (with dead keys)";
+    include "macintosh_vndr/us(extended)"
+    include "us(dvorak-intl)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "dvorak-alt-intl" {
+    name[Group1]= "USA - Dvorak international (without dead keys)";
+    include "macintosh_vndr/us(extended)"
+    include "us(dvorak-alt-intl)"
+};
+
 hidden
 xkb_symbols "oldmac" {
 
